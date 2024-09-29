@@ -1,0 +1,113 @@
+/* Main container with 60% width */
+.container {
+    max-width: 60%; /* Set the container width to 60% */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sort buttons section */
+  .sort-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .sort-buttons:hover {
+    cursor: pointer;
+  }
+  
+  .top-buttons {
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(229, 129, 16);  
+  }
+  
+  .top-buttons.active {
+    background-color: #4caf50;  
+    color: white;
+  }
+  
+  .reset-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .reset-button:hover {
+    background-color: darkorange;
+  }
+  
+  .ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ticket-tile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .flight-logo {
+    width: 60px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  .ticket-info-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .ticket-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .arrival-depart {
+    font-size: larger;
+    font-weight: bold;
+  }
+  
+  .ticket-column p {
+    margin: 0;
+  }
+  
+  .book-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .book-button:hover {
+    background-color: darkorange;
+  }
+  
+  @media (max-width: 768px) {
+    .ticket-info-row {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    .container {
+      max-width: 90%; 
+    }
+  }
+  
